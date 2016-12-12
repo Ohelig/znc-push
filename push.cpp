@@ -1940,6 +1940,7 @@ void CPushSocket::Request(bool post, const CString& host, const CString& url, MC
 	parent->PutDebug("Query string: " + query);
 
 	Write(request);
+	parent->PutDebug("Request: " + crlf + request);
 	parent->PutDebug("Request sending");
 }
 
